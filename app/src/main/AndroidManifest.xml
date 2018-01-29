@@ -13,6 +13,7 @@
             android:name=".activities.TalkByCategoryActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,6 +22,11 @@
         </activity>
 
         <activity android:name=".activities.SearchTedTalksActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".activities.SearchResultActivity"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>

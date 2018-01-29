@@ -9,6 +9,7 @@
     <dimen name="margin_large">24dp</dimen>
     <dimen name="margin_xlarge">32dp</dimen>
     <dimen name="margin_xxlarge">48dp</dimen>
+    <dimen name="margin_xxxlarge">60dp</dimen>
 
     <dimen name="margin_small_n">-4dp</dimen>
     <dimen name="margin_card_medium_n">-6dp</dimen>
@@ -32,4 +33,12 @@
 
 
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="talks_image_size">200dp</dimen>
+    <dimen name="podcast_image_height">200dp</dimen>
+    <dimen name="talk_playlist_width">160dp</dimen>
+    <dimen name="talk_playlist_height">170dp</dimen>
+
+    <dimen name="video_width">150dp</dimen>
+    <dimen name="video_height">80dp</dimen>
+    <dimen name="video_description">170dp</dimen>
 </resources>

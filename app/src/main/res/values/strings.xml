@@ -6,4 +6,23 @@
     <string name="lbl_recommended_speakers">Recommended speakers</string>
     <string name="lbl_recommended_subtitle_languages">Recommended subtitle languages</string>
     <string name="lbl_recommended_events">Recommended events</string>
+
+    <string name="tip_description">You can continue playing a talk while  on another screen or app.
+        Enable background playback in <font color="#F44336">Settings.</font></string>
+    <string name="speaker_name">Bill Gate</string>
+    <string name="speaking_topic"><b>Do schools kill creativity?</b></string>
+    <string name="speaking_duration">19:24</string>
+
+    <string name="playlist_title"><b>Why not walk it out?</b></string>
+    <string name="number_of_playlist">7 talks</string>
+    <string name="total_duration">1:12:27</string>
+
+    <string name="podcast_title"><b>The Big Five</b></string>
+    <string name="podcast_description">What are the five biggest global challenges we face right now
+    and what can we do about them? This hour TED speakers explore some radical solutions to these enduring problems.</string>
+
+    <string name="search_result_title"><font color="#FFFFFF">Population</font></string>
+    <string name="video_duration">11:07</string>
+    <string name="video_speaker_name">Juilo Gil</string>
+    <string name="video_brief"><b>Future tech will give you the benefits of city life anywhere</b></string>
 </resources>

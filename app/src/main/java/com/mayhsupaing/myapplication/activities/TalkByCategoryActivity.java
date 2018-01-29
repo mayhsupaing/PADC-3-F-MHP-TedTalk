@@ -14,6 +14,8 @@ import android.view.MenuItem;
 
 import com.mayhsupaing.myapplication.R;
 import com.mayhsupaing.myapplication.adapters.TalkByCategoryAdapter;
+import com.mayhsupaing.myapplication.fragments.PlaylistFragment;
+import com.mayhsupaing.myapplication.fragments.PodcastsFragment;
 import com.mayhsupaing.myapplication.fragments.TalkByCategoryFragment;
 
 import butterknife.BindView;
@@ -54,8 +56,8 @@ public class TalkByCategoryActivity extends AppCompatActivity {
         vpTalkByCategory.setAdapter(mTalkByCategoryAdapter);
 
         mTalkByCategoryAdapter.addTab(new TalkByCategoryFragment());
-        mTalkByCategoryAdapter.addTab(new TalkByCategoryFragment());
-        mTalkByCategoryAdapter.addTab(new TalkByCategoryFragment());
+        mTalkByCategoryAdapter.addTab(new PlaylistFragment());
+        mTalkByCategoryAdapter.addTab(new PodcastsFragment());
 
 
       tbTalkByCategory.setupWithViewPager(vpTalkByCategory);

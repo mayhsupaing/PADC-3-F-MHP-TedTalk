@@ -13,5 +13,5 @@
         <color name="red_background">#F44336</color>
         <color name="white_text">#FFF</color>
         <color name="full_black">#000</color>
-
+        <color name="white_full">#FFF</color>
     </resources>

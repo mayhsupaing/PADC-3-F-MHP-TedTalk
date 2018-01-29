@@ -10,6 +10,7 @@
         android:text="Gaming"
         android:drawableLeft="@drawable/ic_local_offer_black_24dp"
         android:drawablePadding="@dimen/margin_medium_3"
-        android:textColor="@color/full_black"/>
+        android:textColor="@color/full_black"
+        android:foreground="@drawable/ripple_primary"/>
 
 </FrameLayout>
