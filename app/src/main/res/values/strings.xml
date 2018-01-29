@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name"><font color="#F44336"><b>TED</b> Talks</font></string>
+    <string name="action_settings">Settings</string>
+
+    <string name="lbl_recommended_topics">Recommended Topics</string>
+    <string name="lbl_recommended_speakers">Recommended speakers</string>
+    <string name="lbl_recommended_subtitle_languages">Recommended subtitle languages</string>
+    <string name="lbl_recommended_events">Recommended events</string>
+</resources>

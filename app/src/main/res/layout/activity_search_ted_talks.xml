@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_background">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxlarge"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:background="@color/red_background"
+                    android:drawableRight="@drawable/ic_mic_white_24dp"
+                    android:hint="Search TED Talks"
+                    android:textColorHint="@color/white_text"
+                    android:textSize="@dimen/text_regular_3x" />
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:id="@+id/ll_search_ted_talks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_recommended_topics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium_2">
+
+                <TextView
+                    android:id="@+id/tv_recommended_topics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="@string/lbl_recommended_topics"
+                    android:textColor="@color/red_text"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recommended_topics"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/tv_recommended_topics"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginLeft="@dimen/margin_medium_2">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_show_all_topics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_recommended_topics"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_xxlarge"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="Show all topics"
+                    android:textColor="@color/red_text"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_recommended_speaker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium_2">
+
+                <TextView
+                    android:id="@+id/tv_recommended_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="@string/lbl_recommended_speakers"
+                    android:textColor="@color/red_text"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recommended_speaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/tv_recommended_speaker"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginLeft="@dimen/margin_medium_2">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_show_all_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_recommended_speaker"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_xxlarge"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="Show all speakers"
+                    android:textColor="@color/red_text"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_recommended_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_weight="1"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium_2">
+
+                <TextView
+                    android:id="@+id/tv_recommended_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="@string/lbl_recommended_subtitle_languages"
+                    android:textColor="@color/red_text"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recommended_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/tv_recommended_language"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginLeft="@dimen/margin_medium_2">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_show_all_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_recommended_language"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_xxlarge"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="Show all languages"
+                    android:textColor="@color/red_text"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_recommended_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_weight="1"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium_2">
+
+                <TextView
+                    android:id="@+id/tv_recommended_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="@string/lbl_recommended_events"
+                    android:textColor="@color/red_text"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recommended_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/tv_recommended_event"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginLeft="@dimen/margin_medium_2">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_show_all_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_recommended_event"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_xxlarge"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="Show all events"
+                    android:textColor="@color/red_text"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
