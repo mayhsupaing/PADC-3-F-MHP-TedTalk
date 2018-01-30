@@ -5,12 +5,12 @@
 
     <TextView
         android:id="@+id/tv_recommended_topics"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gaming"
         android:drawableLeft="@drawable/ic_local_offer_black_24dp"
         android:drawablePadding="@dimen/margin_medium_3"
         android:textColor="@color/full_black"
-        android:foreground="@drawable/ripple_primary"/>
+        android:foreground="@drawable/ripple_primary" />
 
 </FrameLayout>

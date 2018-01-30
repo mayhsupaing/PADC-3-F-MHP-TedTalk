@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mayhsupaing.myapplication.R;
+import com.mayhsupaing.myapplication.delegates.SearchDelegate;
 import com.mayhsupaing.myapplication.viewholders.ItemRecommendedEventViewHolder;
 import com.mayhsupaing.myapplication.viewholders.ItemRecommendedLanguageViewHolder;
 
@@ -15,12 +16,18 @@ import com.mayhsupaing.myapplication.viewholders.ItemRecommendedLanguageViewHold
  */
 
 public class RecommendedEventAdapter extends RecyclerView.Adapter {
+
+    private SearchDelegate mSearchDelegate;
+    public RecommendedEventAdapter(SearchDelegate searchDelegate) {
+        mSearchDelegate=searchDelegate;
+    }
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context=parent.getContext();
         LayoutInflater inflater=LayoutInflater.from(context);
         View recommendedEvent=inflater.inflate(R.layout.item_recommended_events,parent,false);
-        ItemRecommendedEventViewHolder itemRecommendedEventViewHolder=new ItemRecommendedEventViewHolder(recommendedEvent);
+        ItemRecommendedEventViewHolder itemRecommendedEventViewHolder=new ItemRecommendedEventViewHolder(recommendedEvent,mSearchDelegate);
         return itemRecommendedEventViewHolder;
     }
 

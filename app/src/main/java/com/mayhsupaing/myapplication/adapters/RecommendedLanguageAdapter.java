@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mayhsupaing.myapplication.R;
+import com.mayhsupaing.myapplication.delegates.SearchDelegate;
 import com.mayhsupaing.myapplication.viewholders.ItemRecommendedLanguageViewHolder;
 import com.mayhsupaing.myapplication.viewholders.ItemRecommendedSpeakerViewHolder;
 
@@ -15,12 +16,19 @@ import com.mayhsupaing.myapplication.viewholders.ItemRecommendedSpeakerViewHolde
  */
 
 public class RecommendedLanguageAdapter extends RecyclerView.Adapter {
+
+    private SearchDelegate mSearchDelegate;
+
+    public RecommendedLanguageAdapter(SearchDelegate searchDelegate) {
+        mSearchDelegate=searchDelegate;
+    }
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context=parent.getContext();
         LayoutInflater inflater=LayoutInflater.from(context);
         View recommendedLanguage=inflater.inflate(R.layout.item_recommended_lanuguage,parent,false);
-        ItemRecommendedLanguageViewHolder itemRecommendedLanguageViewHolder=new ItemRecommendedLanguageViewHolder(recommendedLanguage);
+        ItemRecommendedLanguageViewHolder itemRecommendedLanguageViewHolder=new ItemRecommendedLanguageViewHolder(recommendedLanguage,mSearchDelegate);
         return itemRecommendedLanguageViewHolder;
     }
 

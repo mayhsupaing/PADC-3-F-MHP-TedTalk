@@ -11,11 +11,12 @@
 
     <TextView
         android:id="@+id/tv_speakers_name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Miguel Nicolelis"
         android:layout_alignRight="@id/iv_speakers_profile"
         android:paddingTop="@dimen/margin_medium"
         android:paddingLeft="@dimen/margin_medium_3"
-        android:textColor="@color/full_black"/>
+        android:textColor="@color/full_black"
+        android:foreground="@drawable/ripple_primary"/>
 </LinearLayout>
