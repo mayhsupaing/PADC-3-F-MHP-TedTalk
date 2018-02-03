@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -36,6 +38,7 @@ public class TalkByCategoryActivity extends AppCompatActivity {
     @BindView(R.id.tb_talk_by_category)
     TabLayout tbTalkByCategory;
 
+
     private TalkByCategoryAdapter mTalkByCategoryAdapter;
 
     /*private int[] tabIcons={
@@ -52,6 +55,7 @@ public class TalkByCategoryActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
 
+
         mTalkByCategoryAdapter=new TalkByCategoryAdapter(getSupportFragmentManager());
         vpTalkByCategory.setAdapter(mTalkByCategoryAdapter);
 
@@ -63,7 +67,6 @@ public class TalkByCategoryActivity extends AppCompatActivity {
       tbTalkByCategory.setupWithViewPager(vpTalkByCategory);
       setUpTaplayoutIcon();
 
-
     }
 
     public void setUpTaplayoutIcon(){
@@ -71,6 +74,7 @@ public class TalkByCategoryActivity extends AppCompatActivity {
         tbTalkByCategory.getTabAt(1).setIcon(R.drawable.ic_subscriptions_black_24dp);
         tbTalkByCategory.getTabAt(2).setIcon(R.drawable.ic_headset_black_24dp);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
